@@ -73,9 +73,17 @@
             <div class="Welcome">Welcome</div>
             
         </div>
-        <input class="Email" type="text" placeholder="Email">
-        <input class="Pass" type="text" placeholder="Password">
-        <button class="Login"> Log in </button>
+        <input class="Email" type="text" id="email" placeholder="Email">
+        <input class="Pass" type="text" id="password" placeholder="Password">
+        <button onclick="submitLogin()" class="Login"> Log in </button>
+        <p id="message" ></p>
         </div>
+
+        <script>
+            async function submitLogin(){
+                const user = document.getElementById('email').value;
+                const pass = document.getElementById('password').value;
+            }
+        </script>
     </body>
 </html>
