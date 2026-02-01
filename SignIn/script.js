@@ -5,20 +5,20 @@ async function submitLogin(){
     try{
         const response = await fetch('/api/login', {
             method: 'POST',
-            header: { 'Content-Type': 'application/json'},
+            headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify({username: user, password: pass})
         });
-        const result = await response.json;
+        const result = await response.json();
         document.getElementById('message').innerText = result.message;
 
         if(result.success){
-            document.getElementById('message').style.color('green');
+            document.getElementById('message').style.color = 'green';
         }
         else{
-            document.getElementById('message').style.color('red');
+            document.getElementById('message').style.color= 'red';
         }
     }
     catch(error){
-        document.getElementById('message').innerText = "Serve is not running!";
+        document.getElementById('message').innerText = "Server is not running!";
     }
 }
