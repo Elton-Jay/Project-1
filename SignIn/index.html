@@ -21,7 +21,15 @@
                 left: 140px;
                 font-size: 39px;
 
-
+            }
+            .message{
+                display:inline-block;
+                /* border: solid; */
+                top: 100px;
+                left: 20%;
+                width: 250px;
+                text-align: center;
+                position: absolute;
             }
 
             .Email{
@@ -64,6 +72,7 @@
             .Login:hover{
                 cursor: pointer;
             }
+
             
         </style>
     </head>
@@ -71,12 +80,12 @@
         <div>
         <div class="Main">
             <div class="Welcome">Welcome</div>
-            
+            <p class="message" id="message" >Invalid username or password</p>
         </div>
         <input class="Email" type="text" id="email" placeholder="Email">
         <input class="Pass" type="text" id="password" placeholder="Password">
         <button onclick="submitLogin()" class="Login"> Log in </button>
-        <p id="message" ></p>
+
         </div>
 
         <script src="script.js">

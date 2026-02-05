@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+            .body{
+                background-color: rgb(49, 49, 49);
+            }
+            .image-container{
+                position: relative;
+                display: flex;
+                border: solid;
+                container-type: inline-size;
+            }
+            .main-image{
+                height: auto;
+                width: 100%;
+                filter:brightness(50%)
+            }
+            
+            .Home, .Profile, .Portfolio, .Services, .Resume, .References, .Skills, .Contact{
+                /* border: solid; */
+                display: inline-block;
+                left: 50px;
+                border: none;
+                border-radius: 10px;
+                padding: 1.5em 2em;
+                font-size: 1.3cqw;
+                background-color: transparent;
+                font-family: Arial;
+                color:rgb(181, 196, 209);
+            }
+            .Home:hover, .Profile:hover, .Portfolio:hover, .Services:hover, .Resume:hover, .References:hover, .Skills:hover, .Contact:hover{
+                cursor: pointer;
+            }
+            .name-space, .title-space, .bio-space{
+                position: absolute;
+                color:rgb(213, 230, 245);
+            }
+            .name-space{
+                bottom: 55%;
+                font-size: 7cqw;
+                width: 100%;
+                text-align: center;
+            }
+            .title-space{
+                width: 100%;
+                bottom: 48%;
+                text-align: center;
+                font-size: 4cqw;
+            }
+            .bio-space{
+                bottom: 42%;
+                width: 100%;
+                text-align: center;
+                font-size: 2cqw;
+            }
+            .second-part{
+                display: flex;
+                container-type: inline-size;
+                flex-direction: row;
+                background-color:beige;
+                justify-content: space-between;
+                background-color: rgb(49, 49, 49);
+
+            }
+            .Space{
+                width:100%;
+            }
+
+        </style>
+    </head>
+    <body class="body">
+        <div class="first-part">
+            <div class="image-container">
+                <img class="main-image" src="images/freepik.jpg"> 
+                <div class="name-space">I'm Elton Jay!</div>
+                <div class="title-space">Student</div>
+                <div class="bio-space">21 years young, aspiring software engineer...</div>
+            </div>
+        </div>
+        <div class="second-part">
+            <div class="Space"></div>
+            <button class="Home">
+                Home
+            </button>
+            <button class="Profile">
+                Profile
+            </button>
+            <button class="Portfolio">
+                Portfolio
+            </button>
+            <button class="Services">
+                Services
+            </button> 
+            <button class="Resume">
+                Resume
+            </button>
+            <button class="References">
+                References
+            </button>
+            <button class="Skills">
+                Skills
+            </button>
+            <button class="Contact">
+                Contact 
+            </button>   
+            <div class="Space"></div>          
+        </div>
+    </body>
+</html>
