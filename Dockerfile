@@ -1,3 +1,6 @@
+#clear instruction what is happening when using docker
+
+
 # 1. Start with a pre-made Node.js environment
 FROM node:18
 
