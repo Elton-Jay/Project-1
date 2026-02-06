@@ -2,6 +2,7 @@ async function submitLogin(){
     const user = document.getElementById('email').value;
     const pass = document.getElementById('password').value;
 
+
     
     try{
         const response = await fetch('/api/login', {
@@ -11,9 +12,11 @@ async function submitLogin(){
         });
         const result = await response.json();
         document.getElementById('message').innerText = result.message;
+        
 
         if(result.success){
             document.getElementById('message').style.color = 'green';
+            window.location.replace("MainPage.html");
         }
         else{
             document.getElementById('message').style.color= 'red';
@@ -21,5 +24,6 @@ async function submitLogin(){
     }
     catch(error){
         document.getElementById('message').innerText = "Server is offline!";
+       
     }
 }

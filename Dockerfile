@@ -19,3 +19,13 @@ EXPOSE 3000
 CMD ["node", "server.js"]
 
 ENV PORT=3000
+
+# FROM nginx:alpine
+
+# # Remove default nginx site
+# RUN rm -rf /usr/share/nginx/html/*
+
+# # Copy your website files
+# COPY site/ /usr/share/nginx/html/
+
+# EXPOSE 80
